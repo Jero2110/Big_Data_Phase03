@@ -1,0 +1,10 @@
+pdfplumber
+pandas
+nltk
+wordcloud
+matplotlib
+seaborn
+scikit-learn
+networkx
+pyvis
+tqdm

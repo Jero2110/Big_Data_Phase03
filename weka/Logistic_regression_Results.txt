@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     iris
+Instances:    150
+Attributes:   5
+              sepallength
+              sepalwidth
+              petallength
+              petalwidth
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class Iris-setosa :
+29.99 + 
+[petallength] * -9.96 +
+[petalwidth] * -5.71
+
+Class Iris-versicolor :
+-6.15 + 
+[sepallength] * 1.67 +
+[sepalwidth] * 0.82 +
+[petallength] * -0.74 +
+[petalwidth] * -1.28
+
+Class Iris-virginica :
+-34.94 + 
+[sepallength] * -0.4 +
+[sepalwidth] * -3.76 +
+[petallength] * 6.27 +
+[petalwidth] * 10.89
+
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         141               94      %
+Incorrectly Classified Instances         9                6      %
+Kappa statistic                          0.91  
+Mean absolute error                      0.0439
+Root mean squared error                  0.1542
+Relative absolute error                  9.8675 %
+Root relative squared error             32.7159 %
+Total Number of Instances              150     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    0,000    1,000      1,000    1,000      1,000    1,000     1,000     Iris-setosa
+                 0,860    0,020    0,956      0,860    0,905      0,864    0,984     0,979     Iris-versicolor
+                 0,960    0,070    0,873      0,960    0,914      0,871    0,988     0,970     Iris-virginica
+Weighted Avg.    0,940    0,030    0,943      0,940    0,940      0,912    0,991     0,983     
+
+=== Confusion Matrix ===
+
+  a  b  c   <-- classified as
+ 50  0  0 |  a = Iris-setosa
+  0 43  7 |  b = Iris-versicolor
+  0  2 48 |  c = Iris-virginica
+

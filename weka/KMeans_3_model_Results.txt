@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     ACT3_Dataset(Dry_Beans_Dataset)-weka.filters.unsupervised.attribute.Remove-R17
+Instances:    13611
+Attributes:   16
+              ﻿Area
+              Perimeter
+              MajorAxisLength
+              MinorAxisLength
+              AspectRation
+              Eccentricity
+              ConvexArea
+              EquivDiameter
+              Extent
+              Solidity
+              roundness
+              Compactness
+              ShapeFactor1
+              ShapeFactor2
+              ShapeFactor3
+              ShapeFactor4
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 9
+Within cluster sum of squared errors: 2070.826096300112
+
+Initial starting points (random):
+
+Cluster 0: 39261,714.215,243.405493,205.562735,1.184093,0.535512,39589,223.581434,0.779468,0.991715,0.967193,0.918555,0.0062,0.002723,0.843744,0.999072
+Cluster 1: 84265,1124.466,442.88142,244.937809,1.808138,0.833145,85624,327.550806,0.670206,0.984128,0.837461,0.73959,0.005256,0.00097,0.546994,0.98904
+Cluster 2: 38098,719.528,265.777719,183.220944,1.450586,0.724403,38399,220.245046,0.707405,0.992161,0.924734,0.828681,0.006976,0.002029,0.686713,0.996136
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                               Cluster#
+Attribute          Full Data          0          1          2
+                   (13611.0)   (2384.0)   (5177.0)   (6050.0)
+=============================================================
+﻿Area           53048.2845 38867.8192 76497.5698 38570.4795
+Perimeter           855.2835   717.6042  1061.6012   732.9893
+MajorAxisLength     320.1419   247.8178   408.5095   273.0247
+MinorAxisLength     202.2707   198.4212   231.7071   178.5988
+AspectRation          1.5832     1.2514     1.7984     1.5299
+Eccentricity          0.7509     0.5921     0.8215     0.7531
+ConvexArea        53768.2002 39266.1044 77654.5704 39043.1188
+EquivDiameter       253.0642   221.4483    305.909    220.303
+Extent                0.7497     0.7721     0.7376     0.7513
+Solidity              0.9871     0.9899     0.9849     0.9879
+roundness             0.8733     0.9419     0.8177     0.8938
+Compactness           0.7999     0.8942     0.7469      0.808
+ShapeFactor1          0.0066     0.0065     0.0058     0.0072
+ShapeFactor2          0.0017     0.0026     0.0011     0.0019
+ShapeFactor3          0.6436     0.8002     0.5599     0.6535
+ShapeFactor4          0.9951     0.9981     0.9923     0.9963
+
+
+
+
+Time taken to build model (full training data) : 0.1 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       2384 ( 18%)
+1       5177 ( 38%)
+2       6050 ( 44%)
+
